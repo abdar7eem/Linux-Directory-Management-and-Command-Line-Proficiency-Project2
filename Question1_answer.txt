@@ -1,0 +1,63 @@
+Question 1:
+find / -d >directories.txt 2>error.txt
+**************
+Question 2:
+vi forever 
+(write isnide it:(
+while true
+do exho hi comp311 students> out
+))
+**************
+Question 3:
+forever&
+**************
+Question 4:
+fg %1
+ctrl+z
+bg %1
+jobs
+ps
+fg %1
+**************
+Question 5:
+forever&
+forever&
+forever&
+forever&
+kill %2 (start from 2 beacuse there is a job 1 in foreground)
+kill %3
+kill %4
+kill %5
+------
+forever&
+forever&
+forever&
+forever&
+kill 4114
+kill 4117
+kill 4123
+kill 4127
+**************
+Question 6:
+forever&
+kill -SIGSTOP %1
+bg %1
+**************
+Question 7:
+kill $(jobs -p)
+**************
+Question 8:
+myprj2var=project
+export myprj2var (make it global variable)
+ksh
+echo $myprj2var (it must display project word)
+**************
+Question 9:
+mkdir prj2
+PATH=$PATH:/prj2
+echo $PATH
+**************
+Question 10:
+1-nice : We use it to change a piority (19 - -20).
+2-renice : we use it to change a piority for running procces(job).
+**************

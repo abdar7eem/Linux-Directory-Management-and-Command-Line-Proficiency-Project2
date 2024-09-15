@@ -1,0 +1,29 @@
+Question 1:
+grep -i zsh prj2_passwd|grep -i _Mohammad|cut -d : -f1|cut -d : -f5| cut -d _ -f2 
+****************
+Question 2:
+sort -k3 -r -t : -n -u prj2_passwd|cut -d : -f5|cut -d _ -f1
+****************
+Question 3:
+grep /bin/sh prj2_passwd |cut -d : -f5|tr '_' ' '|tr A-Z a-z >sh_shellusers
+****************
+Question 4:
+head -n 20 prj2_passwd|tail -n 5 |sort -r |tr '_' " "|tr a-z A-Z >user.txt
+****************
+Question 5:
+sort -u prj2_passwd | cut -d : -f5 |cut -d _ -f2| grep -i [a-o]$ >a_oSorted.txt
+****************
+Question 6:
+grep bin/[^zsh] prj2_passwd|cut -d : -f5|tr a-z A-Z|sort -r
+****************
+Question 7:
+grep ^u116 prj2_passwd|sort -k3 -t : -n
+****************
+Question 8:
+ls  /etc/* |grep [^passwd]|more
+****************
+Question 9:
+ls /etc |grep -i ^[a-k]|wc -l
+****************
+Question 10:
+
